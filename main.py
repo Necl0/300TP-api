@@ -28,7 +28,7 @@ def about() -> typing.Dict[str, str]:
 
 
 # item based on ID endpoint
-@app.get("/get-item/{poem_number}") # path parameter
+@app.get("/get-poem/{poem_number}") # path parameter
 def get_item(poem_number: int = Path(None, description="Number of poem that you would like to request data for.", gt=0, lt=321)):
     return poem_json[poem_number]
 
