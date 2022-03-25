@@ -24,7 +24,7 @@ def home() -> typing.Dict[str, str]:
 # about endpoint
 @app.get("/about")
 def about() -> typing.Dict[str, str]:
-    return {"name": "MerolAPI", "info": "An API for Chinese philosophy quotes made using FastAPI.", "author": "Necloremius"}
+    return {"name": "300TP-api", "info": "An API for Chinese philosophy quotes made using FastAPI.", "author": "Necloremius"}
 
 
 # item based on ID endpoint
